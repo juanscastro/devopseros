@@ -5,7 +5,7 @@ export function baseOptions(): BaseLayoutProps {
   return {
     nav: {
       // JSX supported
-      title: appName,
+      title: "DevOpseros",
     },
     githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
   };
