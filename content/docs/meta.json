@@ -3,6 +3,7 @@
   "pages": [
     "index",
     "about",
-    "fundamentos-linux"
+    "---Fundamentos-linux---",
+    "usuarios-grupos"
   ]
 }
