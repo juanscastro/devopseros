@@ -3,38 +3,29 @@ title: Filesystem
 description: Fundamentos de Linux - Filesystem
 ---
 
-## Code Block
+El filesystem de Linux es jerárquico. En el nivel más alto se encuentra el **root**, representado por `/`.
 
-```js
-console.log('Hello World');
-```
+En Windows cada disco utiliza una letra (`C:`, `D:`, etc.). En Linux solo existe `/` y el resto de los directorios son subdirectorios de este.
 
-## Cards
+## Directorios principales
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.dev" />
-</Cards>
-
-El filesystem de linux es jerarquico. En el nivel mas alto se encuentra lo que llamamos root representado por "/"
-En Windows cada disco utiliza una letra como C:, D:, etc. En linux solo existe "/" y el resto de los directorios son subdirectorios de este.
-
-/     Root solo contiene directorios, no archivos, los cuales se ubican en los subdirectorios.
-/bin	Contiene binarios, es decir archivos ejecutables de las aplicaciones.
-/dev	Contiene Devices o dispositivos que representan perifericos o hardware.
-/etc	Contiene archivos de configuracion del sistema y usuarios, generalmente llamados servicios.
-/home	Archivos de los usuarios. Cada usuario tendra su subdirectorio, a menos que se configure lo contrario.
-/lib	Librerias del sistema.
-/media  Punto de montaje de dispositivos extraibles como USB o DVDs.
-/mnt	Punto de montaje para sistemas remotos.
-/opt	Directorio para archivos de terceros (third party).
-/proc	Es un filesystem virtual que contiene información de procesos y el kernel.
-/root	Home del usuario root.
-/run	Archivos temporales y variables del entorno temporales o volatiles
-/sbin	Binarios del sistema.
-/srv	Contiene información de los servicios.
-/sys	Archivos con información del kernel.
-/tmp	Contiene archivos temporales y de la sesion activa (en general se pierden al reiniciar).
-/usr	Aplicaciones y librerias relacionadas al usuario.
-/var	Archivos variables: Logs, Spools (colas).
-
+| Directorio | Descripción |
+| ---------- | ----------- |
+| `/` | Root. Por convención solo contiene directorios; los archivos se ubican en los subdirectorios. |
+| `/bin` | Binarios, es decir, ejecutables de las aplicaciones. |
+| `/dev` | Devices: dispositivos que representan periféricos o hardware. |
+| `/etc` | Archivos de configuración del sistema y de los servicios. |
+| `/home` | Archivos de los usuarios. Cada usuario tiene su subdirectorio, a menos que se configure lo contrario. |
+| `/lib` | Librerías del sistema. |
+| `/media` | Punto de montaje de dispositivos extraíbles, como USB o DVDs. |
+| `/mnt` | Punto de montaje para sistemas de archivos montados manualmente (por ejemplo, remotos). |
+| `/opt` | Software de terceros (third party). |
+| `/proc` | Filesystem virtual con información de procesos y del kernel. |
+| `/root` | Home del usuario root. |
+| `/run` | Datos temporales y volátiles del sistema en ejecución. |
+| `/sbin` | Binarios del sistema (administración). |
+| `/srv` | Datos de los servicios. |
+| `/sys` | Filesystem virtual con información del kernel y los dispositivos. |
+| `/tmp` | Archivos temporales (en general se pierden al reiniciar). |
+| `/usr` | Aplicaciones y librerías de usuario. |
+| `/var` | Archivos variables: logs, spools (colas). |
