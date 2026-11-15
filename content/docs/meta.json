@@ -3,7 +3,11 @@
   "pages": [
     "index",
     "about",
-    "---Fundamentos-linux---",
-    "usuarios-grupos"
+    "---Fundamentos de linux---",
+    "usuarios-grupos",
+    "filesystem",
+    "comandos-basicos",
+    "administracion-de-paquetes",
+    "shell"
   ]
 }
