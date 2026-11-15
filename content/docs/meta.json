@@ -3,11 +3,15 @@
   "pages": [
     "index",
     "about",
-    "---Fundamentos de linux---",
-    "usuarios-grupos",
-    "filesystem",
-    "comandos-basicos",
-    "administracion-de-paquetes",
-    "shell"
+    "---Introducción---",
+    "que-es-devops",
+    "---Fundamentos---",
+    "linux",
+    "git",
+    "cloud",
+    "---Herramientas---",
+    "build-managers",
+    "docker",
+    "kubernetes"
   ]
 }

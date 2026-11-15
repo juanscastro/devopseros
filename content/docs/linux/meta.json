@@ -1,0 +1,13 @@
+{
+  "title": "Linux",
+  "defaultOpen": true,
+  "pages": [
+    "index",
+    "filesystem",
+    "comandos-basicos",
+    "shell",
+    "usuarios-grupos",
+    "administracion-de-paquetes",
+    "..."
+  ]
+}
