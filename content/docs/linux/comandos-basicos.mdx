@@ -17,7 +17,7 @@ Los comandos en Linux deben enunciarse de esta forma:
 comando [opciones] [argumentos]
 ```
 
-Nota: opciones y argumentos no siempre son obligatorios.
+Nota: opciones y argumentos no siempre son obligatorios, depende del comando. Por ejemplo, `ls` y `pwd` funcionan solos, pero `cp`, `mv` o `chmod` necesitan argumentos.
 
 Ej:
 
@@ -39,36 +39,37 @@ Esto cambia los permisos del archivo para el usuario agregándole privilegios pa
 
 | Comando | Descripción |
 | ------- | ----------- |
-| `shutdown` | Apaga el sistema de manera ordenada. |
-| `reboot` | Reinicia el sistema. |
+| `shutdown` | Apaga el sistema de manera ordenada. Requiere permisos de administrador (`sudo`) y suele usarse con opciones o un horario. |
+| `reboot` | Reinicia el sistema. Requiere permisos de administrador (`sudo`). |
 
 ## Comandos de disco
 
 | Comando | Descripción |
 | ------- | ----------- |
-| `du` | Disk Usage muestra el espacio consumido del director en donde estoy parado.|
-| `df` | Disk Free muestra el espacio libre que tengo en el filesystem.|
+| `du` | Disk Usage, muestra el espacio consumido del directorio en donde estamos parados, sumando sus subdirectorios. Con la opción `-h` muestra tamaños legibles (KB, MB, GB). |
+| `df` | Disk Free, muestra el espacio libre que tenemos en cada filesystem montado. También se usa con `-h`. |
 
 ## Comandos de archivos o directorios
 
 | Comando | Descripción |
 | ------- | ----------- |
 | `mkdir` | Crea un directorio. |
-| `rmdir` | Elimina un directorio. |
+| `rmdir` | Elimina un directorio vacío. |
+| `touch` | Crea un archivo vacío. |
 | `mv` | Mueve o renombra un archivo o directorio. |
-| `cp` | Copia un archivo o directorio. |
-| `rm` | Elimina un archivo o directorio. |
+| `cp` | Copia un archivo o directorio (para directorios requiere la opción `-r`). |
+| `rm` | Elimina un archivo o directorio (para directorios requiere la opción `-r`). |
 | `cat` | Muestra el contenido de un archivo. |
-| `more` | Muestra el contenido de un archivo en paginas. |
-| `less` | Muestra el contenido de un archivo en paginas navegables. |
-| `head` | Muestra las primeras lineas de un archivo. |
-| `tail` | Muestra las ultimas lineas de un archivo. |
+| `more` | Muestra el contenido de un archivo en páginas. |
+| `less` | Muestra el contenido de un archivo en páginas navegables. |
+| `head` | Muestra las primeras líneas de un archivo. |
+| `tail` | Muestra las últimas líneas de un archivo. |
 
 ## Otros
 
 | Comando | Descripción |
 | ------- | ----------- |
 | `history` | Muestra el historial de comandos. |
-| `find` | Busca archivos dentro del FS. |
-| `grep` | Filtra la salida de otro comando. |
+| `find` | Busca archivos dentro del Filesystem. |
+| `grep` | Busca texto dentro de archivos o filtra la salida de otro comando. |
 | `man` | Muestra el manual del comando deseado. |
