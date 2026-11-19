@@ -3,15 +3,17 @@ title: Shell
 description: Fundamentos de Linux - Shell
 ---
 
-## Code Block
+## Intro
 
-```js
-console.log('Hello World');
+Dijimos que los administradores de sistemas interactúan con el sistema a través de la CLI (Command Line Interface), enviando instrucciones. A esta línea de comandos la llamamos shell y en Linux generalmente esa shell es un programa llamado Bash. Es el intérprete. Cuando nos logueamos al sistema, lo primero que vemos es esta shell de Bash, que cuando está lista para recibir alguna instrucción, nos presenta un símbolo `$`. Además de eso, es posible crear scripts para shell y programar al sistema para que los ejecute.
+
+## Secure Shell
+
+También conocido como SSH, es un programa que se encuentra en la mayoría de los Linux que provee una conexión segura a un sistema remoto sobre una red. Aunque SSH encripte las comunicaciones, es necesario que tomemos ciertas medidas adicionales para proteger quién puede conectarse a nuestro sistema y de qué manera. En primer lugar, es recomendable utilizar cifrados de clave pública-privada para que las conexiones realizadas no puedan originarse desde cualquier dispositivo. Por otro lado, existen otras configuraciones como el archivo `/etc/ssh/sshd_config`, que nos permiten determinar algunas características que quien se conecte debe cumplir.
+
+```console
+$ pwd
+/home/usuario
+$ ls
+Documentos  Descargas  scripts
 ```
-
-## Cards
-
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.dev" />
-</Cards>
