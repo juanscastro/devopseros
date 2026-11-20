@@ -3,15 +3,16 @@
   "pages": [
     "index",
     "about",
-    "---Introducción---",
-    "que-es-devops",
     "---Fundamentos---",
     "linux",
-    "git",
     "cloud",
+    "devops",
     "---Herramientas---",
-    "build-managers",
+    "git",
     "docker",
+    "build-package-managers",
+    "repository-artifacts",
+    "jenkins",
     "kubernetes"
   ]
 }
